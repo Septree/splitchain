@@ -1,5 +1,5 @@
 // app/layout.js
-// root layout — wraps every page with the wallet provider
+// root layout  wraps every page with the wallet provider
 // so wallet state is available everywhere in the app
 
 import "./globals.css";

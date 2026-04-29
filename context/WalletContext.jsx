@@ -1,7 +1,5 @@
 "use client";
-// context/WalletContext.jsx
 // this file holds the wallet state so every page can access it
-// using the same ethers v5 pattern from class (Web3Provider -> getSigner)
 
 import { createContext, useContext, useState } from "react";
 import { ethers } from "ethers";

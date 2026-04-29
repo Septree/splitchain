@@ -1,3 +1,5 @@
+// add expense  form to log a new expense to the group, writes to the contract
+
 "use client";
 
 import { useState } from "react";

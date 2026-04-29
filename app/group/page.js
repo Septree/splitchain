@@ -1,3 +1,5 @@
+// group page  shows members and expenses for a specific group
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -113,17 +115,24 @@ export default function GroupPage() {
             ))}
             </div>
         </div>
-
         {/* expenses header + add button */}
-        <div className="flex items-center justify-between mb-3">
-            <h2 className="text-lg font-semibold text-white">expenses</h2>
-            <Link
-            href={`/add-expense?id=${groupId}`}
-            className="bg-green-500 hover:bg-green-400 text-black font-semibold px-4 py-2 rounded-lg transition-colors text-sm"
-            >
-            + add expense
-            </Link>
-        </div>
+            <div className="flex items-center justify-between mb-3">
+                <h2 className="text-lg font-semibold text-white">expenses</h2>
+                <div className="flex gap-2">
+                <Link
+                    href={`/settlement?id=${groupId}`}
+                    className="border border-green-500 text-green-400 hover:bg-green-500 hover:text-black font-semibold px-4 py-2 rounded-lg transition-colors text-sm"
+                >
+                    settle up
+                </Link>
+                <Link
+                    href={`/add-expense?id=${groupId}`}
+                    className="bg-green-500 hover:bg-green-400 text-black font-semibold px-4 py-2 rounded-lg transition-colors text-sm"
+                >
+                    + add expense
+                </Link>
+                </div>
+            </div>
 
         {/* expenses list */}
         {expenses.length === 0 ? (

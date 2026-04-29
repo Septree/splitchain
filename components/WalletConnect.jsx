@@ -1,4 +1,4 @@
-// components/WalletConnect.jsx
+"use client";
 // button that connects the wallet and shows the address when connected
 
 import { useWallet } from "@/context/WalletContext";

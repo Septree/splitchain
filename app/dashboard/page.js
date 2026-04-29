@@ -1,3 +1,5 @@
+// dashboard  shows all groups the user belongs to, lets them create new ones
+
 "use client";
 
 import { useState, useEffect } from "react";
